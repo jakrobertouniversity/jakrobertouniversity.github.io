@@ -1,0 +1,109 @@
+@import "global.css";
+
+* {
+	margin: 0;
+	padding: 0;
+
+	font-size: 24px;
+    font-family: "Gotham-Light";
+
+	overflow-x: hidden;
+}
+
+/* topbar */
+.topbar {
+	background-color: var(--primary-color);
+	color: var(--white-color);
+	height: 96px;
+	width: 92vw;
+
+	padding-top: 16px;
+	padding-bottom: 16px;
+	padding-left: 4vw;
+	padding-right: 4vw;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.topbar .left {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+
+	gap: 24px;
+}
+
+.topbar .right {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    gap: 36px;
+}
+
+.topbar .right button {
+    border: none;
+	background-color: transparent;
+	color: var(--white-color);
+	font-size: 32px;
+	font-family: "Gotham-Light";
+	cursor: pointer;
+
+	padding-left: 24px;
+	padding-right: 24px;
+}
+
+.topbar .title {
+	font-size: 48px;
+	font-family: "Gotham-Bold";
+}
+.topbar .subtitle {
+	font-size: 24px;
+    font-family: "Gotham-Light";
+}
+
+.topbar .icon {
+	font-family: "Material Symbols Outlined";
+	font-size: 72px;
+}
+
+/* welcome */
+#welcome {
+    /* background-color: var(--background-color); */
+    height: calc(100vh - 128px);
+	width: 100vw;
+
+	background-image: linear-gradient(90deg, rgba(1, 21, 40, 0), rgba(1, 21, 40, 1)), url("https://images.gmanews.tv/webpics/2023/08/jak_2023_08_19_17_54_07.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#welcome .header {
+	font-size: 8vh;    
+	font-family: "Gotham-Bold";
+	color: var(--white-color);
+    text-align: right;
+
+	padding-right: 8vw;
+	padding-top: 32vh;
+}
+
+#welcome .name {
+	font-size: 4vh;
+	font-family: "Gotham-Light";
+	color: var(--white-color);
+	text-align: right;
+
+	padding-right: 8.5vw;
+}
+
+#welcome .name span {
+	font-size: 2vh;
+	font-family: "Gotham-Light";
+	color: var(--white-color);
+}
