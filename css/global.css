@@ -1,4 +1,10 @@
 @font-face {
+	font-family: "Gotham-Black";
+	src: url("/fonts/Gotham-Black.otf") format("opentype");
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
 	font-family: "Gotham-Bold";
 	src: url("/fonts/Gotham-Bold.otf") format("opentype");
 	font-weight: bold;
@@ -12,7 +18,7 @@
 }
 
 :root {
-	--primary-color: #083C6C;
+	--primary-color: rgb(8, 60, 110);
 	--secondary-color: #032A51;
 	
 	--background-color: #C1D1E1;

@@ -10,8 +10,29 @@
 	overflow-x: hidden;
 }
 
+.h-line {
+	-webkit-mask-image: linear-gradient(
+		0deg,
+		rgba(0, 0, 0, 0) 0%,
+		rgba(0, 0, 0, 0.75) 30% 40%,
+		rgba(0, 0, 0, 0.75) 40% 70%,
+		rgba(0, 0, 0, 0) 100%
+	);
+	mask-image: linear-gradient(
+		0deg,
+		rgba(0, 0, 0, 0) 0%,
+		rgba(0, 0, 0, 0.75) 30% 40%,
+		rgba(0, 0, 0, 0.75) 40% 70%,
+		rgba(0, 0, 0, 0) 100%
+	);
+}
+
+.nowrap {
+	white-space: nowrap;
+}
+
 body {
-	background-color: var(--background-color);
+	background-color: var(--secondary-color);
 }
 
 /* topbar */
@@ -120,17 +141,24 @@ body {
 	height: 100vh;
 	width: 100vw;
 
-	background-image: linear-gradient(90deg, rgba(1, 21, 40, 0), rgba(1, 21, 40, 1)), url("https://images.gmanews.tv/webpics/2023/08/jak_2023_08_19_17_54_07.jpg");
-	background-size: cover;
-	background-position: 0px 0px;
-	background-repeat: no-repeat;
 	overflow: hidden;
 }
 
-@media screen and (max-width: 1000px) {
-	#welcome {
-		height: 100vw;
-	}
+#welcome .bg {
+	height: 50vw;
+	width: 100vw;
+	color: rgb(0, 0, 0, 0);
+	position: absolute;
+
+	-webkit-mask-image: linear-gradient(180deg, rgba(0, 0, 0, 1) 40vw, rgba(0, 0, 0, 0));
+	mask-image: linear-gradient(180deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+
+	background-image: linear-gradient(90deg, rgba(1, 21, 40, 0), rgba(1, 21, 40, 1)), url("https://images.gmanews.tv/webpics/2023/08/jak_2023_08_19_17_54_07.jpg");
+	background-size: contain;
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+
+	z-index: -1;
 }
 
 #welcome .header {
@@ -172,4 +200,86 @@ body {
 	#welcome .name span {
 		font-size: 1.5vw;
 	}
+}
+
+/* academy-intro */
+#academy {
+    /* background-color: var(--background-color); */
+	height: 200vh;
+	width: 100vw;
+	overflow: hidden;
+
+	background-color: var(--secondary-color);
+}
+
+#academy .intro {  
+	background-image: linear-gradient(0deg, rgba(8, 60, 110, 1), rgba(1, 21, 40, 0)) 100%;
+	color: var(--white-color);
+    text-align: left;
+
+	padding-left: 8vw;
+	padding-right: 8vw;
+	padding-top: 2%;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	gap: 2px;
+
+	overflow: hidden;
+}
+
+#academy * .join {
+	overflow: hidden;
+}
+
+#academy * .join .title {
+	font-family: "Gotham-Bold";
+	font-size: 3vw;
+}
+
+#academy * .join .title .highlight {
+	font-family: "Gotham-Black";
+	font-size: 4vw;
+}
+
+#academy * .join .subtitle {
+	font-size: 2vw;
+}
+
+#jak-book {
+	color: rgb(0, 0, 0, 0);
+	background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), var(--secondary-color) 90%), url("../assets/jak_book.png");
+	background-size: cover;
+	background-position: center center;
+
+	-webkit-mask-image: linear-gradient(180deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+	mask-image: linear-gradient(180deg, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 95%);
+
+	height: 50vw;
+	width: 50vw;
+}
+
+/* academy-line */
+#academy-line {
+	height: 18vw;
+	width: 1vh;
+
+	margin-left: auto;
+	margin-right: auto;
+
+	background-color: white;
+}
+
+/* academy-services */
+#academy .services {
+	padding-top: 1%;
+}
+
+#services-title {
+	color: var(--white-color);
+    text-align: center;
+	font-family: "Gotham-Black";
+	font-size: 3vw;
 }
