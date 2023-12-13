@@ -6,8 +6,6 @@
 
 	font-size: 24px;
     font-family: "Gotham-Light";
-
-	overflow-x: hidden;
 	scroll-behavior: smooth;
 }
 
@@ -34,6 +32,7 @@
 
 body {
 	background-color: var(--secondary-color);
+	overflow-x: hidden;
 }
 
 /* topbar */
@@ -314,8 +313,6 @@ body {
 	justify-content: center;
 	align-items: center;
 	gap: 10px;
-
-	overflow-y: scroll;
 }
 
 #services-panel .service {
@@ -356,6 +353,12 @@ body {
 	padding-left: 2vw;
 	padding-right: 2vw;
 
+	position: absolute;
+
+	left: 30%;
+	right: 30%;
+	bottom: 2.5%;
+
 	font-size: 1vw;
 
 	border-radius: 5% / 25%;
@@ -370,6 +373,7 @@ body {
 		flex-direction: column;
 	}
 	#services-panel .service {
+		display: inline-block;
 		height: auto;
 		min-height: 90vh;
 		width: 90%;
@@ -389,12 +393,10 @@ body {
 		padding-bottom: 2vh;
 	}
 	#services-panel * .join-button {
-		padding-top: 0.5vh;
-		padding-bottom: 0.5vh;
-		padding-left: 2vh;
-		padding-right: 2vh;
+		left: 15vw;
+		right: 15vw;
 	
-		font-size: 2.5vh;
+		font-size: 75%;
 	}
 }
 
