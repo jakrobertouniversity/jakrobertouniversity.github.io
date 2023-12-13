@@ -63,7 +63,7 @@
 					<div class="subtitle" id="academy-subtitle">
 						Being Silos-free is a lesson away.
 					</div>
-					<a class="join-button" href="#services">Join Now</a>
+					<a class="join-button" id="join-now" href="#services">Join Now</a>
 				</div>
 				<div id="jak-video-container">
 					<video autoplay muted loop id="jak-video">
@@ -74,7 +74,7 @@
 			<div id="services">
 				<div id="services-title">Services</div>
 				<div id="services-panel">
-					<div class="service">
+					<div class="service" id="service-1">
 						<div class="title" style="background-image: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(3, 41, 79, 0.6)), url(../assets/jak_book.png);">
 							Trial Lesson
 						</div>
@@ -83,7 +83,7 @@
 						</div>
 						<a class="join-button" href="#services">Try Lesson</a>
 					</div>
-					<div class="service">
+					<div class="service" id="service-2">
 						<div class="title" style="background-image: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(3, 41, 79, 0.6)), url(../assets/jak_tinker.png);">
 							One-Month Lesson Plan
 						</div>
@@ -92,7 +92,7 @@
 						</div>
 						<a class="join-button" href="#services">Get a Schedule</a>
 					</div>
-					<div class="service">
+					<div class="service" id="service-3">
 						<div class="title" style="background-image: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(3, 41, 79, 0.6)), url(../assets/jak_book2.png);">
 							Lesson Subscription
 						</div>
@@ -107,11 +107,11 @@
 
 		<div id="contact">
 			<div class="row">
-				<a href="https://www.youtube.com/watch?v=FloMfdX1hug">About us</a>
-				<a href="https://www.youtube.com/watch?v=FloMfdX1hug">Contacts</a>
-				<a href="https://www.youtube.com/watch?v=FloMfdX1hug">Sponsorships</a>
-				<a href="https://www.youtube.com/watch?v=FloMfdX1hug">Facts and Questions</a>
-				<a href="https://www.youtube.com/watch?v=FloMfdX1hug">Developers</a>
+				<a target="_blank" href="https://www.youtube.com/watch?v=FloMfdX1hug">About us</a>
+				<a target="_blank" href="https://www.youtube.com/watch?v=FloMfdX1hug">Contacts</a>
+				<a target="_blank" href="https://www.youtube.com/watch?v=FloMfdX1hug">Sponsorships</a>
+				<a target="_blank" href="https://www.youtube.com/watch?v=FloMfdX1hug">Facts and Questions</a>
+				<a target="_blank" href="https://www.youtube.com/watch?v=FloMfdX1hug">Developers</a>
 			</div>
 			<br>
 			<span>Site by Clark Jacob Dizon</span>
@@ -129,6 +129,14 @@
 			ScrollReveal().reveal('#academy-title', { delay: 500, distance: '50px' });
 			ScrollReveal().reveal('#academy-subtitle', { delay: 600});
 			ScrollReveal().reveal('#jak-video-container', { delay: 800, distance: '50px' });
+
+			ScrollReveal().reveal('#join-now', { delay: 800, distance: '50px' });
+
+			ScrollReveal().reveal('#join-now', { delay: 800, distance: '50px' });
+			ScrollReveal().reveal('#services-title', { delay: 500, distance: '50px' });
+			ScrollReveal().reveal('#service-1', { delay: 500, distance: '50px' });
+			ScrollReveal().reveal('#service-2', { delay: 600, distance: '50px' });
+			ScrollReveal().reveal('#service-3', { delay: 700, distance: '50px' });
 		</script>
     </body>
 </html>
