@@ -8,6 +8,7 @@
     font-family: "Gotham-Light";
 
 	overflow-x: hidden;
+	scroll-behavior: smooth;
 }
 
 .h-line {
@@ -205,7 +206,7 @@ body {
 /* academy-intro */
 #academy {
     /* background-color: var(--background-color); */
-	height: 200vh;
+	height: auto;
 	width: 100vw;
 	overflow: hidden;
 
@@ -220,6 +221,7 @@ body {
 	padding-left: 8vw;
 	padding-right: 8vw;
 	padding-top: 2%;
+	padding-bottom: 6%;
 
 	display: flex;
 	flex-direction: row;
@@ -231,7 +233,29 @@ body {
 }
 
 #academy * .join {
-	overflow: hidden;
+	height: 40vw;
+	padding-top: 15vw;
+	/* margin-bottom: 10%; */
+}
+
+#academy * .join .join-button {
+	color: white;
+	font-family: "Gotham-Bold";
+	text-decoration: none;
+	background-color: var(--accent-color);
+
+	position: absolute;
+
+	margin-top: 2vw;
+
+	padding-top: 1vw;
+	padding-bottom: 1vw;
+	padding-left: 4vw;
+	padding-right: 4vw;
+
+	font-size: 2vw;
+
+	border-radius: 5% / 25%;
 }
 
 #academy * .join .title {
@@ -248,9 +272,9 @@ body {
 	font-size: 2vw;
 }
 
-#jak-book {
+#jak-video-container {
 	color: rgb(0, 0, 0, 0);
-	background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), var(--secondary-color) 90%), url("../assets/jak_book.png");
+	background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), var(--secondary-color) 90%);
 	background-size: cover;
 	background-position: center center;
 
@@ -259,22 +283,21 @@ body {
 
 	height: 50vw;
 	width: 50vw;
+	overflow: hidden;
+	border-radius: 3%;
 }
 
-/* academy-line */
-#academy-line {
-	height: 18vw;
-	width: 1vh;
-
-	margin-left: auto;
-	margin-right: auto;
-
-	background-color: white;
+#jak-video {
+	object-fit: fill;
+	height: 100%;
+	width: 100%;
 }
 
 /* academy-services */
-#academy .services {
-	padding-top: 1%;
+#academy #services {
+	padding-top: 2.5%;
+	padding-bottom: 5%;
+	background-color: var(--primary-color);
 }
 
 #services-title {
@@ -282,4 +305,141 @@ body {
     text-align: center;
 	font-family: "Gotham-Black";
 	font-size: 3vw;
+	padding-bottom: 2%;
+}
+
+#services-panel {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+
+	overflow-y: scroll;
+}
+
+#services-panel .service {
+	color: var(--white-color);
+	text-align: center;
+	background-color: var(--secondary-color);
+
+	height: 45vw;
+	width: 30vw;
+}
+
+#services-panel .service .title {
+	font-family: "Gotham-Bold";
+	font-size: 2vw;
+
+	background-size: cover;
+
+	height: 35vw;
+	padding-top: 1vw;
+}
+
+#services-panel .service .description {
+	font-size: 1vw;
+	padding-top: 1vw;
+	padding-left: 1vw;
+	padding-right: 1vw;
+	padding-bottom: 1vw;
+}
+
+#services-panel * .join-button {
+	color: white;
+	font-family: "Gotham-Bold";
+	text-decoration: none;
+	background-color: var(--accent-color);
+
+	padding-top: 0.5vw;
+	padding-bottom: 0.5vw;
+	padding-left: 2vw;
+	padding-right: 2vw;
+
+	font-size: 1vw;
+
+	border-radius: 5% / 25%;
+}
+
+@media screen and (max-width: 850px) {
+	#services-title {
+		font-size: 3vh;
+		padding-bottom: 3%;
+	}
+	#services-panel {
+		flex-direction: column;
+	}
+	#services-panel .service {
+		height: auto;
+		min-height: 90vh;
+		width: 90%;
+	}
+	#services-panel .service .title {
+		font-size: 3vh;
+	
+		height: auto;
+		min-height: 72vh;
+		padding-top: 1vh;
+	}
+	#services-panel .service .description {
+		font-size: 2vh;
+		padding-top: 3vh;
+		padding-left: 2vh;
+		padding-right: 2vh;
+		padding-bottom: 2vh;
+	}
+	#services-panel * .join-button {
+		padding-top: 0.5vh;
+		padding-bottom: 0.5vh;
+		padding-left: 2vh;
+		padding-right: 2vh;
+	
+		font-size: 2.5vh;
+	}
+}
+
+#contact {
+	/* background-color: var(--background-color); */
+	height: auto;
+	width: 100vw;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	padding-top: 4vh;
+	padding-bottom: 8vh;
+
+	background-color: var(--secondary-color);
+	color: var(--white-color);
+}
+
+#contact .row {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 2vw;
+	
+}
+
+@media screen and (max-width: 850px) {
+	#contact .row {
+		flex-direction: column;
+	}
+}
+
+#contact .row a {
+	text-decoration: none;
+	color: var(--white-color);
+}
+#contact .row a:visited {
+	color: var(--white-color);
+}
+#contact .row a:hover {
+	color: var(--accent-color);
+}
+#contact .row a:active {
+	color: var(--accent-color);
 }

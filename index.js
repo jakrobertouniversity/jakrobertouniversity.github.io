@@ -1,30 +1,30 @@
-const TopbarButtons = document.getElementById('ROUTE_BUTTONS').getElementsByTagName("button");
+const TOPBAR_BUTTONS = document.getElementById('ROUTE_BUTTONS').getElementsByTagName("button");
 
-for (let i = 0; i < TopbarButtons.length; i++) {
-	TopbarButtons[i].addEventListener('click', function () {
-		alert(`You clicked on ${TopbarButtons[i].innerText} button`);
+for (let i = 0; i < TOPBAR_BUTTONS.length; i++) {
+	TOPBAR_BUTTONS[i].addEventListener('click', function () {
+		alert(`You clicked on ${TOPBAR_BUTTONS[i].innerText} button`);
 	});
 }
 
-const FaviconLink = document.createElement('link');
-FaviconLink.type = 'image/x-icon';
-FaviconLink.rel = 'shortcut icon'
-const Favicon = {
-	Light: "assets/favicon/dark.png",
-	Dark: "assets/favicon/light.png"
+const FAVICON_URL = document.createElement('link');
+FAVICON_URL.type = 'image/x-icon';
+FAVICON_URL.rel = 'shortcut icon'
+const FAVICONS = {
+	light: "assets/favicon/dark.png",
+	dark: "assets/favicon/light.png"
 }
 if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-	FaviconLink.href = Favicon.Dark;
+	FAVICON_URL.href = FAVICONS.dark;
 } else {
-	FaviconLink.href = Favicon.Light;
+	FAVICON_URL.href = FAVICONS.light;
 }
-document.head.appendChild(FaviconLink);
+document.head.appendChild(FAVICON_URL);
 
-const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-darkModeMediaQuery.addListener((e) => {
+const DARK_MODE_MEDIA_QUERY = window.matchMedia('(prefers-color-scheme: dark)');
+DARK_MODE_MEDIA_QUERY.addListener((e) => {
 	if (e.matches) {
-		FaviconLink.href = Favicon.Dark;
+		FAVICON_URL.href = FAVICONS.dark;
 	} else {
-		FaviconLink.href = Favicon.Light;
+		FAVICON_URL.href = FAVICONS.light;
 	}
 });
