@@ -222,18 +222,24 @@ body {
 	padding-top: 2%;
 	padding-bottom: 6%;
 
+	height: 50vw;
+
+	/*
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
 	gap: 2px;
+	*/
 
 	overflow: hidden;
 }
 
 #academy * .join {
+	position: absolute;
 	height: 40vw;
 	padding-top: 15vw;
+	z-index: 1;
 	/* margin-bottom: 10%; */
 }
 
@@ -259,19 +265,23 @@ body {
 
 #academy * .join .title {
 	font-family: "Gotham-Bold";
-	font-size: 3vw;
+	font-size: 5vh;
 }
 
 #academy * .join .title .highlight {
 	font-family: "Gotham-Black";
-	font-size: 4vw;
+	font-size: 6vh;
 }
 
 #academy * .join .subtitle {
-	font-size: 2vw;
+	font-size: 4vh;
 }
 
 #jak-video-container {
+	position: absolute;
+	left: auto;
+	right: 10vh;
+
 	color: rgb(0, 0, 0, 0);
 	background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), var(--secondary-color) 90%);
 	background-size: cover;
@@ -281,7 +291,7 @@ body {
 	mask-image: linear-gradient(180deg, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 95%);
 
 	height: 50vw;
-	width: 50vw;
+	width: 40vw;
 	overflow: hidden;
 	border-radius: 3%;
 }
