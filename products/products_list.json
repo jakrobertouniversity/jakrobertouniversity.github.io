@@ -1,0 +1,45 @@
+{
+    "default": {
+        "type": "None",
+
+        "title": "None",
+        "short_description": "",
+        "description": "",
+
+        "currency": "PHP",
+        "price": "10"
+    },
+
+    "trial-lesson": {
+        "type": "Product",
+
+        "title": "Trial Lesson",
+        "short_description": "Discover the basics of Anti‑Silos in this 1-hour online course.",
+        "description": "Discover the basics of Anti‑Silos in this 1-hour online course.",
+
+        "currency": "PHP",
+        "price": "100"
+    },
+
+    "one-month-lesson": {
+        "type": "Product",
+
+        "title": "One-Month Lesson Plan",
+        "short_description": "Learn the ways of Anti‑Silos in a pre-organized schedule customized to your schedule.",
+        "description": "Learn the ways of Anti‑Silos in a pre-organized schedule customized to your schedule.",
+
+        "currency": "PHP",
+        "price": "150"
+    },
+
+    "lesson-subscription": {
+        "type": "Subscription",
+
+        "title": "Lesson Subscription",
+        "short_description": "Have a monthly regular schedule of lessons to keep your Anti‑Silos strong all through-out the year. Cancel any time.",
+        "description": "Have a monthly regular schedule of lessons to keep your Anti‑Silos strong all through-out the year. Cancel any time.",
+
+        "currency": "PHP",
+        "price": "200"
+    }
+}
