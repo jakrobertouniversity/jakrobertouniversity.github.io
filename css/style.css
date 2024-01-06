@@ -324,7 +324,6 @@ body {
 	justify-content: center;
 	align-items: center;
 	gap: 2vw;
-	
 }
 
 @media screen and (max-width: 850px) {
@@ -345,4 +344,9 @@ body {
 }
 #contact .row a:active {
 	color: var(--accent-color);
+}
+
+#contact .row a img {
+	height: 0.95rem;
+	color: var(--white-color);
 }
