@@ -26,3 +26,12 @@
 
 	--accent-color: #F2A900;
 }
+
+* {
+	margin: 0;
+	padding: 0;
+
+	font-size: 24px;
+    font-family: "Gotham-Light";
+	scroll-behavior: smooth;
+}

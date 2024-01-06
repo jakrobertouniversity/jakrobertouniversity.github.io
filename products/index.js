@@ -9,6 +9,12 @@ const product_data = products[product_id] ? products[product_id] : products["def
 document.getElementsByTagName("title")[0].textContent = product_data.title
 
 document.getElementById("product-title").textContent = product_data.title
-document.getElementById("product-type").textContent = product_data.type
 document.getElementById("product-description").textContent = product_data.description
 document.getElementById("product-price").textContent = product_data.currency + " " + product_data.price
+document.getElementById("product-billing").textContent = product_data.billing
+
+document.getElementById("product-media").style.backgroundImage = `url('${product_data.image}')`
+
+document.getElementById("buy-button").addEventListener('click', function () {
+    alert(`You requested to buy product ${product_data.title} for ${product_data.currency} ${product_data.price}`);
+});

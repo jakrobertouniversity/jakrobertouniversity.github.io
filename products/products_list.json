@@ -5,9 +5,11 @@
         "title": "None",
         "short_description": "",
         "description": "",
+        "image": "",
 
         "currency": "PHP",
-        "price": "10"
+        "price": "0",
+        "billing": "None"
     },
 
     "trial-lesson": {
@@ -16,9 +18,11 @@
         "title": "Trial Lesson",
         "short_description": "Discover the basics of Anti‑Silos in this 1-hour online course.",
         "description": "Discover the basics of Anti‑Silos in this 1-hour online course.",
+        "image": "../assets/jak_book.png",
 
         "currency": "PHP",
-        "price": "100"
+        "price": "100",
+        "billing": "One Time Payment"
     },
 
     "one-month-lesson": {
@@ -27,9 +31,11 @@
         "title": "One-Month Lesson Plan",
         "short_description": "Learn the ways of Anti‑Silos in a pre-organized schedule customized to your schedule.",
         "description": "Learn the ways of Anti‑Silos in a pre-organized schedule customized to your schedule.",
+        "image": "../assets/jak_tinker.png",
 
         "currency": "PHP",
-        "price": "150"
+        "price": "150",
+        "billing": "One Time Payment"
     },
 
     "lesson-subscription": {
@@ -38,8 +44,10 @@
         "title": "Lesson Subscription",
         "short_description": "Have a monthly regular schedule of lessons to keep your Anti‑Silos strong all through-out the year. Cancel any time.",
         "description": "Have a monthly regular schedule of lessons to keep your Anti‑Silos strong all through-out the year. Cancel any time.",
+        "image": "../assets/jak_book2.png",
 
         "currency": "PHP",
-        "price": "200"
+        "price": "200",
+        "billing": "Monthly"
     }
 }

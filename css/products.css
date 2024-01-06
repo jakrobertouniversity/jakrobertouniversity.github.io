@@ -1,0 +1,77 @@
+body {
+    background-color: var(--secondary-color);
+}
+
+#product-container {
+    color: var(--white-color);
+    height: 40vw;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#product {
+    height: 30vw;
+    width: auto;
+    display: flex;
+    gap: 2vw;
+    
+    margin-top: 1vw;
+}
+
+#product-media {
+    width: 30vw;
+    height: 30vw;
+    background-color: var(--primary-color);
+    background-size:cover;
+}
+
+#product-info {
+    min-width: 36vw;
+    max-width: 48vw;
+}
+
+#product-title {
+    font-size: 3vw;
+	font-family: "Gotham-Black";
+    margin-bottom: 1vw;
+}
+
+#product-price {
+    font-size: 1.5vw;
+    font-family: "Gotham-Bold";
+}
+
+#product-billing {
+    font-size: 1vw;
+}
+
+#product-description {
+    font-size: 1.5vw;
+}
+
+#product-info button {
+    background-color: var(--accent-color);
+
+    border-radius: 1vw;
+    border: none;
+    outline: none;
+
+    height: 4vw;
+    width: 100%;
+
+    font-family: "Gotham-Bold";
+    font-size: 1.5vw;
+
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+
+    transition-duration: 250ms;
+}
+
+#product-info button:hover {
+    background-color:#d19200;
+    cursor: pointer;
+}
