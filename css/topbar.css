@@ -34,7 +34,7 @@
     gap: 36px;
 }
 
-.topbar .right a {
+.topbar .right button {
     border: none;
 	background-color: transparent;
 	color: var(--white-color);
@@ -48,7 +48,7 @@
 }
 
 @media screen and (max-width: 900px) {
-	.topbar .right #OFFERS {
+	#OFFERS-BUTTON {
 		display: none;
 	}
 }
@@ -99,4 +99,5 @@
 	font-size: 72px;
 	text-decoration: none;
 	color: white;
+	cursor: pointer;
 }
